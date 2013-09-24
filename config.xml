@@ -16,7 +16,6 @@
 		<author href="https://www.siervofiel.org" email="info@siervofiel.org">
 			Ministerio Siervo Fiel
 		</author>
-		<gap:platform name="ios" />
 		<gap:platform name="android" />
 		<preference name="permissions" value="none"/>
 		<icon src="Icon-60.png" />
