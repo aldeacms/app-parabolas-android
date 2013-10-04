@@ -21,7 +21,7 @@ function onDeviceReady() {
 			else{
 				random = random+".html";	
 			}
-			URL = "pages/parabola"+random;
+			URL = "file:///pages/parabola"+random;
 			$.ajax({
 				type: 'GET',
 				url: URL,
@@ -55,7 +55,7 @@ function onDeviceReady() {
 					$("#listadoParabolas a").on("click",function(){
 						$(this).parent().parent().addClass("active");
 
-						URL = "pages/"+$(this).attr("href");
+						URL = "file:///pages/"+$(this).attr("href");
 						$.ajax({
 							type: 'GET',
 							url: URL,
