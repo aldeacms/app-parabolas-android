@@ -18,7 +18,7 @@
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 		
 		<gap:platform name="android" />
-		<preference name="permissions" value="none"/>
+		
 		
 		<preference name="phonegap-version" value="3.0.0" />
 		<preference name="orientation" value="portrait" />
