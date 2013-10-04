@@ -1,6 +1,8 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-
+	document.addEventListener("backbutton", onBackKeyDown, false);
+    document.addEventListener("menubutton", onMenuKeyDown, false);
+	
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
 		$(this).parent().addClass("active");
@@ -105,3 +107,11 @@ function resizeContent(){
 	var totalHeight = $(window).height();
 	$("#content").css("height",totalHeight-110+"px");
 }
+
+function onBackKeyDown(){
+	navigator.app.exitApp();
+}
+function onMenuKeyDown(){
+	$("#tabHome").click();
+}
+
