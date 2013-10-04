@@ -85,7 +85,6 @@ html,body{
 	font-size:18px;
 	line-height:22px;
 	overflow-y:auto;
-	-webkit-overflow-scrolling: touch;
 }
 
 #content h2{
