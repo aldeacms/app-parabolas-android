@@ -26,10 +26,5 @@
 		<preference name="stay-in-webview" value="false" />
 		
 		<icon src="img/icon-57.png" />
-		<icon src="img/icon-57.png" gap:platform="ios" width="57" height="57" />
-		<icon src="img/icon-57-2x.png" gap:platform="ios" width="72" height="72" />
 
-		<gap:splash src="img/splash.png" gap:platform="ios" width="320" height="480" />
-		<gap:splash src="img/splash2x.png" gap:platform="ios" width="640" height="960" />
-		<gap:splash src="img/splash3.png" gap:platform="ios" width="640" height="1136" />
 	</widget>
