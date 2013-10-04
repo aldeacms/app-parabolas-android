@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.siervofiel.parabolas"
+		versionCode="10"
+        version   = "1.0.0">
+
+		<name>Parabolas de Jesus</name>
+
+		<description>
+			Parabolas de Jesus para iOS
+		</description>
+
+		<author href="https://www.siervofiel.org" email="info@siervofiel.org">
+			Ministerio Siervo Fiel
+		</author>
+		
+		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		
+		<gap:platform name="android" />
+		
+		<preference name="phonegap-version" value="3.0.0" />
+		<preference name="orientation" value="portrait" />
+		<preference name="webviewbounce" value="false" />
+		<preference name="stay-in-webview" value="false" />
+		
+		<icon src="img/icon-57.png" />
+		<icon src="img/icon-57.png" gap:platform="ios" width="57" height="57" />
+		<icon src="img/icon-57-2x.png" gap:platform="ios" width="72" height="72" />
+
+		<gap:splash src="img/splash.png" gap:platform="ios" width="320" height="480" />
+		<gap:splash src="img/splash2x.png" gap:platform="ios" width="640" height="960" />
+		<gap:splash src="img/splash3.png" gap:platform="ios" width="640" height="1136" />
+	</widget>
