@@ -16,6 +16,7 @@
 		</author>
 		
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		<preference name="android-minSdkVersion" value="10" />
 		
 		<gap:platform name="android" />
 		<preference name="permissions" value="none"/>
