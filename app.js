@@ -8,7 +8,7 @@ function onDeviceReady() {
 		$(this).parent().addClass("active");
 		
 		tab = $(this).attr("rel");
-		page = tab+".html";
+		page = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
 		
 		if (tab=="random"){
@@ -21,7 +21,7 @@ function onDeviceReady() {
 			else{
 				random = random+".html";	
 			}
-			URL = "parabola"+random;
+			URL = "pages/parabola"+random;
 			$.ajax({
 				type: 'GET',
 				url: URL,
@@ -36,7 +36,6 @@ function onDeviceReady() {
 					return false;
 				}
 			});
-		return false;
 		}
 		
 		$.ajax({
@@ -55,7 +54,7 @@ function onDeviceReady() {
 					$("#listadoParabolas a").on("click",function(){
 						$(this).parent().parent().addClass("active");
 
-						URL = $(this).attr("href");
+						URL = "pages/"+$(this).attr("href");
 						$.ajax({
 							type: 'GET',
 							url: URL,
@@ -67,7 +66,6 @@ function onDeviceReady() {
 								$("#content").html(data);
 								$("#content").scrollTop(0);
 								$("#header .titulo span").html("Par&aacute;bola");
-								return false;
 							}
 						});
 					});	
