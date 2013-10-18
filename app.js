@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 		
 		tab = $(this).attr("rel");
-		page = "ffile:///pages/"+tab+".html";
+		page = "file:///pages/"+tab+".html";
 		titulo = $(this).attr("title");
 		
 		if (tab=="random"){
