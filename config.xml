@@ -15,7 +15,11 @@
 			Ministerio Siervo Fiel
 		</author>
 		
+		<plugin name="Battery" value="org.apache.cordova.BatteryListener" />
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		
+		<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+		
 
 		<gap:platform name="android" />
 
