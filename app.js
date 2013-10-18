@@ -1,14 +1,14 @@
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-
-	navigator.splashscreen.hide();
+// document.addEventListener("deviceready", onDeviceReady, false);
+// function onDeviceReady() {
+$(document).ready(function(){
+	// navigator.splashscreen.hide();
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
 		$(this).parent().addClass("active");
 		
 		tab = $(this).attr("rel");
-		page = "file:///pages/"+tab+".html";
+		page = "file:///file:///pages/"+tab+".html";
 		titulo = $(this).attr("title");
 		
 		if (tab=="random"){
@@ -133,14 +133,14 @@ function onDeviceReady() {
 	
 	
 	
-	 resizeContent();
-	 $(window).on('resize', function(){
-		resizeContent();
-	});
+	 // resizeContent();
+	 // $(window).on('resize', function(){
+		// resizeContent();
+	// });
 	
 	$("#tabHome").click();
-}
-
+// }
+});
 function resizeContent(){
 	var totalHeight = $(window).height();
 	$("#content").css("height",totalHeight-110+"px");

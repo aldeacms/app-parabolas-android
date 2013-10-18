@@ -46,6 +46,9 @@ em{
 	color:#FFF;
 	text-align:center;
 	height:50px;	
+	position:fixed;
+	top:0;
+	z-index:100;
 }
 
 #header table{
@@ -79,6 +82,45 @@ em{
 	font-weight:bold;
 }
 
+#menu{
+	height:60px;
+	width:100%;
+	background:#ededed;
+	position:fixed;
+	top:50px;
+	z-index:100;
+}
+#menu table{
+	margin: 0 auto;
+}
+#menu table td{
+	text-align:center;
+	vertical-align: middle;
+	padding-top:4px;
+	width:80px;
+}
+#menu table td a{
+	color:#444;
+	text-decoration:none;
+	display:block;
+}
+#menu table td.active a{
+	color:#cd3e3e;
+}
+#menu table td a i{
+	font-size:20px;
+	display:block;
+	margin-top:5px;
+}
+#menu table td a span{
+	display:block;
+	clear:both;
+	font-size:11px;
+	padding-top:2px;
+	letter-spacing: 1.2;
+}
+
+
 #btnBack,
 #btnSearch{
 	display:none;
@@ -109,8 +151,7 @@ em{
 	width:100%;
 	font-size:18px;
 	line-height:22px;
-	overflow-y:auto;
-	-webkit-overflow-scrolling: touch;
+	padding-top:110px;
 }
 
 #content h2{
@@ -215,39 +256,6 @@ em{
 	margin:0 auto;
 }
 
-#menu{
-	height:60px;
-	background:#ededed;
-}
-#menu table{
-	margin: 0 auto;
-}
-#menu table td{
-	text-align:center;
-	vertical-align: middle;
-	padding-top:4px;
-	width:80px;
-}
-#menu table td a{
-	color:#444;
-	text-decoration:none;
-	display:block;
-}
-#menu table td.active a{
-	color:#cd3e3e;
-}
-#menu table td a i{
-	font-size:20px;
-	display:block;
-	margin-top:5px;
-}
-#menu table td a span{
-	display:block;
-	clear:both;
-	font-size:11px;
-	padding-top:2px;
-	letter-spacing: 1.2;
-}
 
 
 
