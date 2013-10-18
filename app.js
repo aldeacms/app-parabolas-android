@@ -1,6 +1,6 @@
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-// $(document).ready(function(){
+// document.addEventListener("deviceready", onDeviceReady, false);
+// function onDeviceReady() {
+$(document).ready(function(){
 	navigator.splashscreen.hide();
 
 	$("#menu a").on("click",function(){
@@ -133,5 +133,5 @@ function onDeviceReady() {
 	
 	
 	$("#tabHome").click();
-}
-// });
+// }
+});
