@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 		
 		tab = $(this).attr("rel");
-		page = "file:///pages/"+tab+".html";
+		page = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
 		
 		if (tab=="random"){
@@ -21,7 +21,7 @@ $(document).ready(function(){
 			else{
 				random = random+".html";	
 			}
-			URL = "file:///pages/parabola"+random;
+			URL = "pages/parabola"+random;
 			$.ajax({
 				type: 'GET',
 				url: URL,
@@ -55,7 +55,7 @@ $(document).ready(function(){
 					$("#listadoParabolas a").on("click",function(){
 						$(this).parent().parent().addClass("active");
 
-						URL = "file:///pages/"+$(this).attr("href");
+						URL = "pages/"+$(this).attr("href");
 						$.ajax({
 							type: 'GET',
 							url: URL,
