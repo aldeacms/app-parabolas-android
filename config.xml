@@ -27,11 +27,11 @@
 		<preference name="stay-in-webview" value="false" />
 
 		<icon src="icon-72.png" />
-		<icon src="icon-36.png" gap:platform="android" gap:density="ldpi" />
-		<icon src="icon-48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="icon-36.jpg" gap:platform="android" gap:density="ldpi" />
+		<icon src="icon-48.jpg" gap:platform="android" gap:density="mdpi" />
 		<icon src="icon-72.png" gap:platform="android" gap:density="hdpi" />
-		<icon src="icon-96.png" gap:platform="android" gap:density="xhdpi" />
-		<icon src="icon-144.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="icon-96.jpg" gap:platform="android" gap:density="xhdpi" />
+		<icon src="icon-144.jpg" gap:platform="android" gap:density="xxhdpi" />
 
 		<gap:splash src="splash.png" />
 		
