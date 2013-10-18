@@ -26,12 +26,12 @@
 		<preference name="webviewbounce" value="false" />
 		<preference name="stay-in-webview" value="false" />
 
-		<icon src="img/icon-72.png" />
-		<icon src="img/icon-36.png" gap:platform="android" gap:density="ldpi" />
-		<icon src="img/icon-48.png" gap:platform="android" gap:density="mdpi" />
-		<icon src="img/icon-72.png" gap:platform="android" gap:density="hdpi" />
-		<icon src="img/icon-96.png" gap:platform="android" gap:density="xhdpi" />
-		<icon src="img/icon-144.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="icon-72.png" />
+		<icon src="icon-36.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="icon-48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="icon-72.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="icon-96.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="icon-144.png" gap:platform="android" gap:density="xxhdpi" />
 
 		<gap:splash src="splash.png" />
 		
