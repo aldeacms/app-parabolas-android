@@ -1,6 +1,8 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
+	navigator.splashscreen.hide();
+
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
 		$(this).parent().addClass("active");

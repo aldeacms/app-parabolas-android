@@ -16,16 +16,24 @@
 		</author>
 		
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
-		<preference name="android-minSdkVersion" value="10" />
-		
+
 		<gap:platform name="android" />
-		<preference name="permissions" value="none"/>
-		
+
+		<preference name="android-minSdkVersion" value="10" />
+		<preference name="permissions" value="none"/>		
 		<preference name="phonegap-version" value="3.0.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="webviewbounce" value="false" />
 		<preference name="stay-in-webview" value="false" />
+
+		<icon src="img/icon-72.png" />
+		<icon src="img/icon-36.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="img/icon-48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="img/icon-72.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="img/icon-96.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="img/icon-144.png" gap:platform="android" gap:density="xxhdpi" />
+
+		<gap:splash src="splash.png" />
 		
-		<icon src="img/icon-57.png" />
 
 	</widget>
