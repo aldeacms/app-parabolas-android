@@ -72,6 +72,7 @@ function onDeviceReady() {
 										$("#content").html(data);
 										$("#content").scrollTop(0);
 										$("#header .titulo span").html("Lectura B&iacute;blica");
+										return false;
 									}
 								});
 							});	
