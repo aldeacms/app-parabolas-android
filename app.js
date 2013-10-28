@@ -95,28 +95,31 @@ function onDeviceReady() {
 					}
 
 					if($("#listadoParabolas").length){
-							$("#listadoParabolas a").on("click",function(){
-								$(this).parent().parent().addClass("active");
+						$("#listadoParabolas a").on("click",function(){
+							$(this).parent().parent().addClass("active");
 
-								URL = "pages/"+$(this).attr("href");
-								alert(URL);
-								$.ajax({
-									type: 'GET',
-									url: URL,
-									async:false,
-									dataType:'html',
-									success: function(data) { 
-										// $("#btnBack").show();
-										// $("#btnSearch").hide();
+							URL = "pages/"+$(this).attr("href");
+							
+							$.ajax({
+								type: 'GET',
+								url: URL,
+								async:false,
+								dataType:'html',
+								success: function(data) { 
+									alert(URL);
+									return false
+									alert("continua");
+									$("#btnBack").show();
+									$("#btnSearch").hide();
 
-										// $("#content").html(data);
-										// $("#content").scrollTop(0);
-										// $("#header .titulo span").html("Lectura B&iacute;blica");
-										return false;
-									}
-								});
-							});	
-						}
+									$("#content").html(data);
+									$("#content").scrollTop(0);
+									$("#header .titulo span").html("Lectura B&iacute;blica");
+									return false;
+								}
+							});
+						});	
+					}
 					
 					$("a[target=_blank]").on("click",function(){
 						URL = $(this).attr("href");
