@@ -13,8 +13,7 @@ function onDeviceReady() {
 		page = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
 
-		alert(page);
-		
+	
 		if (tab=="random"){
 			$("#btnSearch").hide();			
 			random = Math.floor(Math.random() * (39 - 1 + 1) + 1);
@@ -26,6 +25,7 @@ function onDeviceReady() {
 				random = random+".html";	
 			}
 			URL = "pages/parabola"+random;
+			alert(URL);
 			$.ajax({
 				type: 'GET',
 				url: URL,
@@ -40,6 +40,7 @@ function onDeviceReady() {
 				}
 			});
 		}
+		alert(page);
 		else{
 			$.ajax({
 				type: 'GET',
