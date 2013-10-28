@@ -79,40 +79,40 @@ function onDeviceReady() {
 							});
 						});	
 						
-						$("#busqueda").on("keyup",function(){
-							var search_string = $("#busqueda").val();
+						// $("#busqueda").on("keyup",function(){
+						// 	var search_string = $("#busqueda").val();
 							
-							search_string = search_string.toLowerCase();
+						// 	search_string = search_string.toLowerCase();
 
-							$( ".parabola" ).each(function( index ) {
-								nombre = $(this).data("nombre");
-								if(nombre.search(search_string) !=-1){
-									$(this).parent().parent().parent().show();
-								}
-								else{
-									$(this).parent().parent().parent().hide();
-								}
+						// 	$( ".parabola" ).each(function( index ) {
+						// 		nombre = $(this).data("nombre");
+						// 		if(nombre.search(search_string) !=-1){
+						// 			$(this).parent().parent().parent().show();
+						// 		}
+						// 		else{
+						// 			$(this).parent().parent().parent().hide();
+						// 		}
 								
-							});
+						// 	});
 							
-						});
-						$("#btnClose").on("click",function(){
-							$("#busqueda").val("");
-							$("#busqueda").keyup();
-							return false;
-						});
+						// });
+						// $("#btnClose").on("click",function(){
+						// 	$("#busqueda").val("");
+						// 	$("#busqueda").keyup();
+						// 	return false;
+						// });
 
-						$("#btnSearch").on("click",function(){
-							if($("#divBusqueda").is(":visible")){
-								$("#divBusqueda").hide();
-								$("#busqueda").val("");
-								$("#busqueda").keyup();
-							}
-							else{
-								$("#divBusqueda").show();
-							}		
+						// $("#btnSearch").on("click",function(){
+						// 	if($("#divBusqueda").is(":visible")){
+						// 		$("#divBusqueda").hide();
+						// 		$("#busqueda").val("");
+						// 		$("#busqueda").keyup();
+						// 	}
+						// 	else{
+						// 		$("#divBusqueda").show();
+						// 	}		
 							
-						});	
+						// });	
 					}
 					else{
 						$("#btnBack").hide();
