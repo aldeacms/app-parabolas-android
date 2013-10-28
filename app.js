@@ -35,38 +35,43 @@ function onDeviceReady() {
 		abrirPagina(URL,tipo,titulo);
 
 		if(tipo=="home"){
-			$("#busqueda").on("keyup",function(){
-				var search_string = $("#busqueda").val();
-				
-				search_string = search_string.toLowerCase();
+			$("#content").ready(function(){
+				$("#busqueda").on("keyup",function(){
+					var search_string = $("#busqueda").val();
+					
+					search_string = search_string.toLowerCase();
 
-				$( ".parabola" ).each(function( index ) {
-					nombre = $(this).data("nombre");
-					if(nombre.search(search_string) !=-1){
-						$(this).parent().parent().parent().show();
-					}
-					else{
-						$(this).parent().parent().parent().hide();
-					}
+					$( ".parabola" ).each(function( index ) {
+						nombre = $(this).data("nombre");
+						if(nombre.search(search_string) !=-1){
+							$(this).parent().parent().parent().show();
+						}
+						else{
+							$(this).parent().parent().parent().hide();
+						}
+						
+					});
 					
 				});
-				
-			});
-			$("#btnClose").on("click",function(){
-				$("#busqueda").val("");
-				$("#busqueda").keyup();
-				return false;
-			});
+				$("#btnClose").on("click",function(){
+					$("#busqueda").val("");
+					$("#busqueda").keyup();
+					return false;
+				});
 
-			$("#listadoParabolas a").on("click",function(){
-				$(this).parent().parent().addClass("active");
+				$("#listadoParabolas a").on("click",function(){
+					$(this).parent().parent().addClass("active");
 
-				URL = "pages/"+$(this).attr("href");
-				titulo = "Lectura B&iacute;blica";
-				tipo ="parabola";
-				abrirPagina(URL,tipo,titulo);
-				return false;
+					URL = "pages/"+$(this).attr("href");
+					titulo = "Lectura B&iacute;blica";
+					tipo ="parabola";
+					alert("abre parabola");
+					abrirPagina(URL,tipo,titulo);
+					alert("abrio parabola");
+					return false;
+				});
 			});
+			
 		}
 			
 	
@@ -98,7 +103,6 @@ function abrirPagina(URL, tipo, titulo){
 		async:false,
 		dataType:'html',
 		success: function(data) { 
-			alert(URL);
 			if(tipo!="home" && tipo!="random"){
 				$("#btnBack").show();
 				$("#btnSearch").hide();	
