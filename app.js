@@ -34,42 +34,40 @@ function onDeviceReady() {
 
 		abrirPagina(URL,tipo,titulo);
 
-		if(tipo=="home"){
-			$("#content").ready(function(){
-				$("#busqueda").on("keyup",function(){
-					var search_string = $("#busqueda").val();
-					
-					search_string = search_string.toLowerCase();
+		if($("#listadoParabolas a").length){
+			$("#busqueda").on("keyup",function(){
+				var search_string = $("#busqueda").val();
+				
+				search_string = search_string.toLowerCase();
 
-					$( ".parabola" ).each(function( index ) {
-						nombre = $(this).data("nombre");
-						if(nombre.search(search_string) !=-1){
-							$(this).parent().parent().parent().show();
-						}
-						else{
-							$(this).parent().parent().parent().hide();
-						}
-						
-					});
+				$( ".parabola" ).each(function( index ) {
+					nombre = $(this).data("nombre");
+					if(nombre.search(search_string) !=-1){
+						$(this).parent().parent().parent().show();
+					}
+					else{
+						$(this).parent().parent().parent().hide();
+					}
 					
 				});
-				$("#btnClose").on("click",function(){
-					$("#busqueda").val("");
-					$("#busqueda").keyup();
-					return false;
-				});
+				
+			});
+			$("#btnClose").on("click",function(){
+				$("#busqueda").val("");
+				$("#busqueda").keyup();
+				return false;
+			});
 
-				$("#listadoParabolas a").on("click",function(){
-					$(this).parent().parent().addClass("active");
+			$("#listadoParabolas a").on("click",function(){
+				$(this).parent().parent().addClass("active");
 
-					URL = "pages/"+$(this).attr("href");
-					titulo = "Lectura B&iacute;blica";
-					tipo ="parabola";
-					alert("abre parabola");
-					abrirPagina(URL,tipo,titulo);
-					alert("abrio parabola");
-					return false;
-				});
+				URL = "pages/"+$(this).attr("href");
+				titulo = "Lectura B&iacute;blica";
+				tipo ="parabola";
+				alert("abre parabola");
+				abrirPagina(URL,tipo,titulo);
+				alert("abrio parabola");
+				return false;
 			});
 			
 		}
