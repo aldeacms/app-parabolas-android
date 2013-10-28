@@ -106,12 +106,12 @@ function onDeviceReady() {
 									async:false,
 									dataType:'html',
 									success: function(data) { 
-										$("#btnBack").show();
-										$("#btnSearch").hide();
+										// $("#btnBack").show();
+										// $("#btnSearch").hide();
 
-										$("#content").html(data);
-										$("#content").scrollTop(0);
-										$("#header .titulo span").html("Lectura B&iacute;blica");
+										// $("#content").html(data);
+										// $("#content").scrollTop(0);
+										// $("#header .titulo span").html("Lectura B&iacute;blica");
 										return false;
 									}
 								});
