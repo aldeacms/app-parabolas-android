@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 function onDeviceReady() {
 //$(document).ready(function(){
-	navigator.splashscreen.hide();
+	//navigator.splashscreen.hide();
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
@@ -101,6 +101,18 @@ function onDeviceReady() {
 							$("#busqueda").keyup();
 							return false;
 						});
+
+						$("#btnSearch").on("click",function(){
+							if($("#divBusqueda").is(":visible")){
+								$("#divBusqueda").hide();
+								$("#busqueda").val("");
+								$("#busqueda").keyup();
+							}
+							else{
+								$("#divBusqueda").show();
+							}		
+							
+						});	
 					}
 					else{
 						$("#btnBack").hide();
@@ -123,20 +135,7 @@ function onDeviceReady() {
 	
 	$("#btnBack").on("click",function(){
 		$("#tabHome").click();
-	});
-	
-	$("#btnSearch").on("click",function(){
-		if($("#divBusqueda").is(":visible")){
-			$("#divBusqueda").hide();
-			$("#busqueda").val("");
-			$("#busqueda").keyup();
-		}
-		else{
-			$("#divBusqueda").show();
-		}		
-		
 	});	
-	
 	
 	$("#tabHome").click();
 }
