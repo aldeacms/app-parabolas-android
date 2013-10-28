@@ -53,31 +53,6 @@ function onDeviceReady() {
 					if(tab=='home'){
 						$("#btnBack").hide();
 						$("#btnSearch").show();
-
-						if($("#listadoParabolas").length){
-							$("#listadoParabolas a").on("click",function(){
-								$(this).parent().parent().addClass("active");
-
-								URL = "pages/"+$(this).attr("href");
-								alert(URL);
-								$.ajax({
-									type: 'GET',
-									url: URL,
-									async:false,
-									dataType:'html',
-									success: function(data) { 
-										$("#btnBack").show();
-										$("#btnSearch").hide();
-
-										$("#content").html(data);
-										$("#content").scrollTop(0);
-										$("#header .titulo span").html("Lectura B&iacute;blica");
-										return false;
-									}
-								});
-							});	
-						}
-						
 						
 						$("#busqueda").on("keyup",function(){
 							var search_string = $("#busqueda").val();
@@ -118,6 +93,30 @@ function onDeviceReady() {
 						$("#btnBack").hide();
 						$("#btnSearch").hide();
 					}
+
+					if($("#listadoParabolas").length){
+							$("#listadoParabolas a").on("click",function(){
+								$(this).parent().parent().addClass("active");
+
+								URL = "pages/"+$(this).attr("href");
+								alert(URL);
+								$.ajax({
+									type: 'GET',
+									url: URL,
+									async:false,
+									dataType:'html',
+									success: function(data) { 
+										$("#btnBack").show();
+										$("#btnSearch").hide();
+
+										$("#content").html(data);
+										$("#content").scrollTop(0);
+										$("#header .titulo span").html("Lectura B&iacute;blica");
+										return false;
+									}
+								});
+							});	
+						}
 					
 					$("a[target=_blank]").on("click",function(){
 						URL = $(this).attr("href");
