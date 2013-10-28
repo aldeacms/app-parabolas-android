@@ -15,7 +15,7 @@
 			Ministerio Siervo Fiel
 		</author>
 		
-		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 
 		<gap:platform name="android" />
 
