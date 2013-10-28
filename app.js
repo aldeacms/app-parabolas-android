@@ -40,8 +40,9 @@ function onDeviceReady() {
 				}
 			});
 		}
-		alert(page);
 		else{
+			
+			alert(page);
 			$.ajax({
 				type: 'GET',
 				url: page,
