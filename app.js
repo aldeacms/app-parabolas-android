@@ -1,7 +1,7 @@
-// document.addEventListener("deviceready", onDeviceReady, false);
-// function onDeviceReady() {
-$(document).ready(function(){
-	navigator.splashscreen.hide();
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+//$(document).ready(function(){
+	//navigator.splashscreen.hide();
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
@@ -10,6 +10,8 @@ $(document).ready(function(){
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
+
+		alert(page);
 		
 		if (tab=="random"){
 			$("#btnSearch").hide();			
@@ -133,5 +135,5 @@ $(document).ready(function(){
 	
 	
 	$("#tabHome").click();
-// }
-});
+}
+//});
