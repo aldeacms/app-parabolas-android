@@ -64,9 +64,7 @@ function onDeviceReady() {
 				URL = "pages/"+$(this).attr("href");
 				titulo = "Lectura B&iacute;blica";
 				tipo ="parabola";
-				alert("abre parabola");
 				abrirPagina(URL,tipo,titulo);
-				alert("abrio parabola");
 				return false;
 			});
 			
@@ -109,7 +107,7 @@ function abrirPagina(URL, tipo, titulo){
 				$("#btnBack").hide();
 				$("#btnSearch").hide();	
 			}
-			else{
+			else if(tipo=="home"){
 				$("#btnBack").hide();
 				$("#btnSearch").show();	
 			}
