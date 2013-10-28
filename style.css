@@ -32,6 +32,7 @@ html,body{
 	background:#FFF;
 	font-family: Tahoma, Arial, sans-serif;
 	color:#333;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 em{
 	font-style: italic;
@@ -133,6 +134,7 @@ em{
 	bottom: 42px;
 	left: 87%;
 	font-size: 25px;
+	z-index: 10;
 }
 #busqueda{
 	color: #333;  
