@@ -12,7 +12,7 @@ function onDeviceReady() {
 		tab = $(this).attr("rel");
 		URL = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
-
+		tipo = tab;
 	
 		if (tab=="random"){
 			$("#btnSearch").hide();			
@@ -27,9 +27,6 @@ function onDeviceReady() {
 			URL = "pages/parabola"+random;
 			titulo ="Par&aacute;bola Aleatoria";
 			tipo="random";
-		}
-		else{
-			tipo = "tab";
 		}
 
 		abrirPagina(URL,tipo,titulo);
