@@ -111,9 +111,12 @@ function abrirPagina(URL, tipo, titulo){
 			
 
 			$("#content").html(data);
-			if($("#parabolas").length){
-				$("#content").scrollTop(0);
-			}
+			
+			$("#content").css('overflow-y', 'hidden');
+			$("#content").scrollTop(0);
+			$("#content").css('overflow-y', 'auto');
+			
+			
 			
 			$("#header .titulo span").html(titulo);
 
