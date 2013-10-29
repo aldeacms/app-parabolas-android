@@ -135,6 +135,7 @@ em{
 	left: 87%;
 	font-size: 25px;
 	z-index: 10;
+	display:none;
 }
 #busqueda{
 	color: #333;  

@@ -49,11 +49,11 @@ function onDeviceReady() {
 				});
 				
 			});
-			$("#btnClose").on("click",function(){
-				$("#busqueda").val("");
-				$("#busqueda").keyup();
-				return false;
-			});
+			// $("#btnClose").on("click",function(){
+			// 	$("#busqueda").val("");
+			// 	$("#busqueda").keyup();
+			// 	return false;
+			// });
 
 			$("#listadoParabolas a").on("click",function(){
 				$(this).parent().parent().addClass("active");
@@ -111,7 +111,10 @@ function abrirPagina(URL, tipo, titulo){
 			
 
 			$("#content").html(data);
-			$("#content").scrollTop(0);
+			if($("#parabolas").length){
+				$("#content").scrollTop(0);
+			}
+			
 			$("#header .titulo span").html(titulo);
 
 			$("a[target=_blank]").on("click",function(){
