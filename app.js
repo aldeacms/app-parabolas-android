@@ -119,8 +119,8 @@ function abrirPagina(URL, tipo, titulo){
 
 			$("a[target=_blank]").on("click",function(){
 				URL = $(this).attr("href");
-				//window.open(encodeURI(URL), '_blank','location=yes');
-				window.plugins.childBrowser.openExternal(encodeURI(URL));
+				alert("abre externo");
+				window.open(encodeURI(URL), '_blank','location=yes');
 				return false;
 			});
 
