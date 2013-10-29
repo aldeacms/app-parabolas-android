@@ -31,7 +31,6 @@
 		<preference name="phonegap-version" value="3.0.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="webviewbounce" value="false" />
-		<preference name="stay-in-webview" value="false" />
 
 		<icon src="icon-72.png" />
 		<icon src="icon-36.jpg" gap:platform="android" gap:density="ldpi" />
