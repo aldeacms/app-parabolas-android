@@ -109,10 +109,9 @@ function abrirPagina(URL, tipo, titulo){
 				$("#btnSearch").show();	
 			}
 			
-
+			$("#content").remove();
+			$("body").append('<div id="content" class="cf"></div>');
 			$("#content").html(data);
-			
-			$("#content").scrollTo(0,0);
 			
 			
 			$("#header .titulo span").html(titulo);
