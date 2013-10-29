@@ -19,6 +19,9 @@
 		<feature name="InAppBrowser">
 		    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
 		</feature>
+		<feature name="SplashScreen">
+		    <param name="android-package" value="org.apache.cordova.SplashScreen" />
+		</feature>
 
 		<gap:platform name="android" />
 
