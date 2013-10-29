@@ -1,8 +1,7 @@
-$(document).ready(function(){
-	document.addEventListener("deviceready", onDeviceReady, false);
-});
+document.addEventListener("deviceready", onDeviceReady, false);
+
 function onDeviceReady() {
-	//navigator.splashscreen.hide();
+	navigator.splashscreen.hide();
 
 	$("#menu a").on("click",function(){
 
@@ -119,7 +118,6 @@ function abrirPagina(URL, tipo, titulo){
 
 			$("a[target=_blank]").on("click",function(){
 				URL = $(this).attr("href");
-				alert("abre externo");
 				window.open(encodeURI(URL), '_blank','location=yes');
 				return false;
 			});
