@@ -110,8 +110,8 @@ function abrirPagina(URL, tipo, titulo){
 			}
 			
 			$("#content").remove();
-			$("body").append('<div id="content" class="cf"></div>');
-			$("#content").html(data);
+			$("body").append('<div id="content" class="cf">'+data+'</div>');
+			
 			
 			
 			$("#header .titulo span").html(titulo);
