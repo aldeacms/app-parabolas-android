@@ -112,10 +112,7 @@ function abrirPagina(URL, tipo, titulo){
 
 			$("#content").html(data);
 			
-			$("#content").css('overflow-y', 'hidden');
-			$("#content").scrollTop(0);
-			$("#content").css('overflow-y', 'auto');
-			
+			$("#content").scrollTo(0,0);
 			
 			
 			$("#header .titulo span").html(titulo);
