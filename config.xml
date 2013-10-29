@@ -15,12 +15,7 @@
 			Ministerio Siervo Fiel
 		</author>
 		
-
-		
-		<access origin="*" browserOnly="true"/>
-		<feature name="InAppBrowser">
-		    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
-		</feature>
+		<gap:plugin name="com.phonegap.plugins.childbrowser" />
 
 		<gap:platform name="android" />
 
