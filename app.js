@@ -108,9 +108,8 @@ function abrirPagina(URL, tipo, titulo){
 				$("#btnBack").hide();
 				$("#btnSearch").show();	
 			}
-			
+			$("#content").css("height","0");
 			$("#content").remove();
-			alert("llega");
 			$("body").append('<div id="content" class="cf">'+data+'</div>');
 			
 			
