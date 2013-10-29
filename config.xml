@@ -15,7 +15,9 @@
 			Ministerio Siervo Fiel
 		</author>
 		
-		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
+		
+		<access origin="*" browserOnly="true"/>
 		<feature name="InAppBrowser">
 		    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
 		</feature>
