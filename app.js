@@ -110,6 +110,7 @@ function abrirPagina(URL, tipo, titulo){
 			}
 			
 			$("#content").remove();
+			alert("llega");
 			$("body").append('<div id="content" class="cf">'+data+'</div>');
 			
 			
