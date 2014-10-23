@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.siervofiel.parabolas"
 		versionCode="14"
-        version   = "2.0.2">
+        version   = "2.1">
 
 		<name>Parabolas de Jesus</name>
 
@@ -28,7 +28,7 @@
 		<preference name="android-minSdkVersion" value="9" />
 		<preference name="targetSdkVersion" value="16" /> 
 		<preference name="permissions" value="none"/>		
-		<preference name="phonegap-version" value="3.0.0" />
+		<preference name="phonegap-version" value="3.6.3" />
 		<preference name="orientation" value="portrait" />
 		<preference name="webviewbounce" value="false" />
 
